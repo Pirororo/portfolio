@@ -1,0 +1,146 @@
+body{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+
+
+/* me.html -------------------------- */
+.main-block{
+    position: absolute;
+    top: 315px;
+    left: 80px;
+
+}
+
+.main-fraise{
+    font-size: 90px;
+    color: #000000;
+    line-height: 0.97em;
+    margin-bottom: 69px;
+
+}
+
+.skill{
+    display: flex;
+    font-weight: 300;
+}
+
+.main-skill p{
+    font-size: 30px;
+    color: #000000;
+    letter-spacing:0.06em;
+    margin-bottom: 4px;
+}
+
+.sub-skill p{
+    font-size: 18px;
+    color: #000000;
+    letter-spacing:0.06em;
+    margin-bottom: 3px;
+    margin-left: 55px;
+}
+
+.sentense{
+    /* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif; */
+    font-family: "ヒラギノ角ゴ ProN W2", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 13px;
+    color: #000000;
+    line-height: 1.9em;
+    margin-top: 52px;
+    margin-bottom: 290px;
+}
+
+.img-block{
+
+    position: absolute;
+    left: 803px;
+    top: 0px;
+
+    display: block;
+    width: 650px;
+    height: 1370px;
+    background-color: #000000
+
+}
+
+.img-frame{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+.prof-img{
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+    z-index: 100;
+}
+
+
+/* ナビゲーション -------------------------- */
+/* 最大ではないサイズで読み込むとリンク消えちゃう問題 ？？？？？？？？？？？？？？？？？？*/
+.nav-container {
+
+    width: 16px;
+    height: 348px;
+
+    /* ポジション 絶対配置 画面左上、nav-container左上が起点*/
+    position: absolute;
+    right: 20px;
+    top: 60%;
+
+    /* nav-container内の要素の上下左右中央配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul {
+
+    /* これいれるとずれる、rotateのせいかな */
+    /* width: 100%;
+    height: 100%; */
+
+    /* 右寄せ */
+    float: right;
+    /* 横並び */
+    display: flex;
+    /* 均等配置 */
+    justify-content: space-between;
+    transform: rotateZ(-90deg);
+
+}
+
+nav ul li a.other-link {
+    margin-right: 45px;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a.other-link:hover {
+    /* ライン出てこないな ？？？？？？？？？？？？？？？？？？？？？？？？？ */
+    text-decoration: underline;
+}
+
+nav ul li a.top-link {
+    display: block;
+    /* display: block;にしないとwidthとheightを指定できない */
+    width: 90px;
+    height: 15px;
+
+    margin-left: 35px;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+nav ul li a.current {
+    color: #000000;
+}
+

@@ -1,0 +1,268 @@
+body{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+/* index.html -------------------------- */
+/* ローディング -------------------------- */
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10002;
+    visibility: visible;
+    opacity: 1;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+#loading.inactive {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.wrap-loader {
+    width: 100px;
+    height: 100px;
+}
+
+.loader {
+    color: #DDD;
+    font-size: 20px;
+    margin: 100px auto 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+@keyframes load4 {
+
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+
+
+
+/* メイン 前-------------------------- */
+.logo{
+
+    /* width: 130px; */
+    /* height: 130px; */
+    /* background-color: #FFF; */
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 10; */
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+/* .logo.inactive {
+    visibility: hidden;
+    opacity: 0;
+} */
+
+
+.wrap-logo {
+    width: 550px;
+    height: 130px;
+}
+
+/* うまく移動しないのはなんでかな？？？？？？？？？？？？？？？？？ */
+.wrap-logo.rotate{
+    width: 252px;
+    height: 55px;
+    left: 20%;
+    top: 128px;
+    transform: rotateZ(-90deg);
+}
+
+.logo-main{
+
+    font-size: 100px;
+    letter-spacing: -0.01em;
+    color: #8085A0;
+    text-align: center;
+    /* padding: 80px 0 40px; */
+    height: 90px;
+}
+
+/* メイン 後-------------------------- */
+.fraise{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fraise-main{
+    text-align: center;
+    font-style: italic;
+    font-size: 110px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2.5s ease;
+    line-height: 0.97em;
+}
+
+.fraise-main.active{
+    text-align: center;
+    font-size: 110px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    visibility: visible;
+    opacity: 1;
+    /* transition: all 0.5s ease; */
+    line-height: 0.97em;
+}
+
+
+/* ナビゲーション -------------------------- */
+/* リンク先に飛べない問題 ???????????????????????????????????????????*/
+
+/* nav { */
+    /* width: 100%;
+    height: 63px; */
+    /* background: rgba(255, 255, 255, .8); */
+    /* border-bottom: 1px #EDEDED solid;
+    position: absolute; */
+    /* ポジション　絶対配置 */
+    /* right: 50;
+    bottom: 150 ;
+    z-index: 20; */
+/* } */
+
+/* navが固定した時のクラス */
+/* .nav-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+} */
+
+
+.nav-container {
+
+    width: 19px;
+    height: 348px;
+
+    /* ポジション 絶対配置 起点は画面左上、nav-container左上*/
+    position: absolute;
+    right: 28px;
+    top: 35%;
+    /* 高さ半分よりちょい上ってどうしたらいいの？？？？？？？？？？？？ */
+
+    /* nav-container内の要素の上下左右中央配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 中央配置 上となにがちがうの？？？？？？？？？？？？？？？？？？*/
+    /* margin: 0 auto; */
+
+}
+
+nav ul {
+
+    /* これいれるとずれる、rotateのせいかな */
+    /* width: 100%;
+    height: 100%; */
+
+    /* 右寄せ */
+    float: right;
+    /* 横並び */
+    display: flex;
+    /* 均等配置 */
+    justify-content: space-between;
+    transform: rotateZ(-90deg);
+
+}
+
+nav ul li a.other-link {
+    margin-right: 45px;
+    font-size: 14px;
+    color: #000000;
+}
+
+nav ul li a.other-link:hover {
+    /* ライン出てこないな ？？？？？？？？？？？？？？？？？？？？？？？？？ */
+    border-bottom: 0.5px solid #000000;
+    padding-bottom: 5px;
+    /* ラインくっついちゃう */
+    /* text-decoration: underline; */
+}
+
+nav ul li a.top-link {
+    display: block;
+    /* display: block;にしないとwidthとheightを指定できない */
+    width: 90px;
+    height: 15px;
+
+    margin-left: 35px;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+nav ul li a.current {
+    color: #000000;
+}
