@@ -52,7 +52,7 @@ body{
     /* ポジション 絶対配置 画面左上、nav-container左上が起点*/
     position: fixed;
     right: 20px;
-    top: 40%;
+    top: 35%;
 
     /* nav-container内の要素の上下左右中央配置 */
     display: flex;
