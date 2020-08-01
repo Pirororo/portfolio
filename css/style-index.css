@@ -235,15 +235,22 @@ nav ul {
 }
 
 nav ul li a.other-link {
+    display: inline-block;
     margin-right: 45px;
     font-size: 14px;
     color: #000000;
+
+    text-decoration: none;
+    /* aタグはnoneにする！！inlineblokにする！ */
+    /* 短くbefore after */
+    border-bottom: 0.5px solid #000000;
+    padding-bottom: 5px;
 }
 
 nav ul li a.other-link:hover {
     /* ライン出てこないな ？？？？？？？？？？？？？？？？？？？？？？？？？ */
-    border-bottom: 0.5px solid #000000;
-    padding-bottom: 5px;
+    
+    
     /* ラインくっついちゃう */
     /* text-decoration: underline; */
 }
